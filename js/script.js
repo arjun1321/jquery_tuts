@@ -16,6 +16,9 @@ $(function() {
     });
     
     
+    
+    // jQuery Selectors 
+    
 //    $('h2,h3,h4').css("border","solid 1px red");
 //    
 //    $('div#container').css('border', 'solid 1px red');
@@ -33,6 +36,40 @@ $(function() {
 //    
 //    $(':header').css('border', 'solid 1px red');
     
-    $('div:contains("Arjun")').css('border', 'solid 1px red');
+//    $('div:contains("Arjun")').css('border', 'solid 1px red');
+    
+    
+    /* --------------------
+       jQuery event methods
+       -------------------- */
+    
+    $('#box').click(function() {
+        alert("you just clicked the box");
+    });
+    
+    
+    $("input").blur(function() {
+        if( $(this).val() == "" ) {
+            $(this).css('border','solid 1px red');
+            $('#box').text('Forgot to add text?');
+        }
+    });
+    
+    
+    $('input').keydown(function() {
+        
+        if($(this).val() !== ""){
+            $(this).css('border', 'solid 1px #777');
+            $('#box').text('thanks for that!');
+        }
+        
+    });
+    
+    
+    $('#box').hover(function() {
+       $(this).text('you hovered in!'); 
+    }, function() {
+        $(this).text('you hovered out!');
+    });
     
 });
