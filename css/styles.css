@@ -32,3 +32,54 @@ button {
     border-radius: 5px;
     font-size: 18px;
 }
+
+
+/* --------------------------
+   STYLES FOR JQUERY CHAINING
+   -------------------------- */
+
+.notification-bar {
+    display: non;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.notification-bar a {
+    color: #fc3;
+}
+
+/* -------------------------------
+   HIDING & SHOWING JQUERY LECTURE
+   ------------------------------- */
+
+.hidden {
+    display: none;
+}
+
+#box1 {
+    height: 100px;
+    width: 100px;
+    background: #fc3;
+    color: white;
+    border: solid 4px #333;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

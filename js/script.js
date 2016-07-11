@@ -72,4 +72,44 @@ $(function() {
         $(this).text('you hovered out!');
     });
     
+    
+    /* ---------------
+       JQUERY CHAINING
+       --------------- */
+    
+    $('.notification-bar').delay(1000).slideDown().delay(3000).fadeOut();
+    
+    
+    /* ----------------
+       JQUERY HIDE/SHOW
+       ---------------- */
+    
+//    $('h1').hide();
+//    $('div.hidden').show();
+    $('div.hidden').fadeIn(8000);
+    
+    $('#box1').click(function() {
+        $(this).fadeTo(1000, 0.25, function() {
+            //animation is complete
+            
+            
+            $(this).slideUp();
+        });
+    });
+    
+    $('div.hidden').slideDown();
+    
+    $('button').click(function() {
+        $('#box1').slideToggle();
+    })
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 });
