@@ -1,0 +1,40 @@
+<html>
+    
+    <head>
+        <title>jQuery Chaining</title>
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <body id="race">
+        
+        <h1>jQuery Car Race</h1>
+        
+        <input type="button" value="Race!" id="go">
+        <input type="button" value="Reset" id="reset">
+        
+        <div id="racetrack">
+            
+            <img src="images/car1.jpg" alt="Car1" id="car1" width="57px" height="109px" class="car">
+            <img src="images/car2.jpg" alt="Car2" id="car2" class="car">
+        </div>
+        
+        <div class="clearfix" id="raceInfoContainer">
+            <h2>Results</h2>
+            <div id="raceInfo1" class="raceInfo">Car 1<span></span></div>
+            <div id="raceInfo2" class="raceInfo">Car 2<span></span></div>
+        </div>
+        
+        
+        <!-- Load the CDN first -->
+        <script src="//code.jquery.com/jquery-3.0.0.min.js"></script>
+        
+        
+        <!-- if CDN fails to load, serve up the local version -->
+        <script>window.jQuery || document.write('<script src="js/jquery-3.0.0.min.js"><\/script>')</script>
+        
+        <script src="js/script.js"></script>
+    </body>
+    
+</html>
