@@ -136,6 +136,35 @@ button {
 }
 
 
+/* ------------------
+   JQUERY CSS LECTURE
+   ------------------ */
+
+#circle1 {
+    display: inline-block;
+    background: #8a8d22;
+    color: white;
+    text-align: center;
+    line-height: 140px;
+    height: 140px;
+    width: 140px;
+    margin: 40px;
+}
+
+.circleShape {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 
 
