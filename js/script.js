@@ -101,12 +101,48 @@ $(function() {
     
     $('button').click(function() {
         $('#box1').slideToggle();
-    })
+    });
     
     
+    /* --------------
+       JQUERY ANIMATE
+       -------------- */
     
+    $('#left').click(function() {
+        $('.box').animate({
+            left: "-=40px",
+            fontSize: "+=2px"
+        }, function() {
+            // animation
+        });
+    });
     
+    $('#up').click(function() {
+        $('.box').animate({
+            top: "-=40px",
+            opacity: "+=.01"
+        }, function() {
+        
+        });
+    });
     
+    $('#right').click(function() {
+        $('.box').animate({
+            left: "+=40px",
+            fontSize: "-=2px"
+        }, function() {
+        
+        });
+    });
+    
+    $('#down').click(function() {
+        $('.box').animate({
+            top: "+=40px",
+            opacity: "-=.01"
+        }, function() {
+        
+        });
+    });
     
     
     
